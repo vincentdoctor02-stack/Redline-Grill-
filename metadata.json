@@ -1,0 +1,6 @@
+{
+  "name": "Gourmet Grill Menu",
+  "description": "An interactive high-energy gourmet street-food menu and order customizer featuring a bold red, black, and white design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

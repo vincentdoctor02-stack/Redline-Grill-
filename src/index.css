@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Oswald", Impact, sans-serif;
+  --color-foodred: #e63946;
+  --color-charcoal: #1a1a1a;
+  --color-darkgray: #242424;
+}
+
+/* Custom styles for a 3D sticker look, bold animations and hover effect */
+.border-sticker {
+  border: 3px solid var(--color-foodred);
+  box-shadow: 0 10px 0px rgba(0, 0, 0, 1), 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.border-sticker-interactive {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 10px solid var(--color-foodred);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+.border-sticker-interactive:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+}
+
+.border-sticker-interactive:active {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+.sticker-badge {
+  background-color: var(--color-foodred);
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #e63946;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5261;
+}
